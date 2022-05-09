@@ -5,9 +5,280 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* padding: 0px 20px;  */
+  background-color: #d3d3d34f;
+}
+
+a:visited {
+  color: (internal value);
+  text-decoration: underline;
+  /* cursor: auto; */
+  border-bottom: 1px solid blue;
+}
+
+a{
+  width:100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+
+.flex {
+  display:flex;
+  align-items: center;
+}
+
+.margin-10px {
+  margin: 10px;
+}
+
+.margin-top {
+  margin-top:10px;
+}
+
+.createStory, .story {
+  width: 100px;
+  height: 190px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 3px;
+} 
+
+.flex-column {
+  display: flex;
+  flex-direction: row;
+}
+
+.justify-space-around {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainContent {
+  padding: 0px 20px;
+  align-items: flex-start;
+}
+
+#createStory {
+  width: inherit;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#imagesStory {
+  height: inherit;
+  width:  inherit;
+  border-radius: 10px;
+}
+
+.textOnImage {
+  position: absolute;
+  bottom: -11px;
+  color: white;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.font-color-black {
+  color: black;
+}
+.width30 {
+  width: 30px;
+}
+
+#plus {
+  position: absolute;
+  bottom: 30px;
+  border: 5px solid white;
+  border-radius: 26px;
+}
+
+.profile {
+  position: absolute;
+  height: 30px;
+  width:30px;
+  border-radius: 100%;
+  border: 5px solid #1876F2;
+  top:12px;
+  left:12px;
+}
+
+.noAbsolute {
+  position: unset;
+  border: none;
+}
+
+.carousal {
+  display: flex;
+  position: relative;
+}
+
+.arrows {
+  position: absolute;
+  background-color: white;
+  border-radius: 100%;
+  align-self: center;
+}
+
+#leftarrow {
+  left: -12px;
+  z-index: 1;
+  display: none;
+}
+
+#rightarrow {
+  right: -10px;
+}
+
+.top-div {
+  display: flex;
+}
+
+.middle {
+  flex-direction: column;
+  width: 43.5%;
+}
+
+.second-middle-div {
+  width: 100%;
+  background-color: white;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+
+#whatsProfile {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.inputText {
+  width: 93%;
+  border-radius: 15px;
+  height: 15px;
+  background-color: #F0F2F5;
+  border: none;
+  padding: 10px;
+}
+
+.firstline {
+  margin: 10px
+}
+
+.secondLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  border-top: 1px solid #F0F2F5;
+  margin: 0px 14px;
+}
+
+.unique {
+  align-items: center;
+  display: flex;
+}
+
+.spans {
+  margin-left:10px;
+  font-size: 12px
+}
+
+#createRoom {
+  border: 1px solid grey;
+  border-radius: 16px;
+  padding: 5px 10px;
+}
+
+.third-middle-div {
+  width: 100%;
+  background-color: white;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+
+.third-inner {
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.fourth-middle-div {
+  width: 100%;
+  background-color: white;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+
+#feedGroupImage {
+  height: 40px;
+  width: 40px;
+  border-radius : 5px;
+  margin-right: 10px;
+}
+
+#feedImage {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top : 17px;
+  left : 17px;
+  border-radius : 100%;
+  border: 1px solid white;
+}
+
+#toggle{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+
+
+#world{
+  top: 23.5px;
+  left: 150px;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  border-radius : 100%;
+}
+
+
+.pos-rel {
+  position: relative;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.no-mar {
+  margin: 0;
+}
+
+.mar-top-5 {
+  margin-top: 5px;
+}
+
+.voiceDiv {
+align-items: baseline;
+}
+
+.font-small {
+  font-size: 10px;
+}
+
+.feedImage {
+  width: 100%;
+  height: 400px;
 }

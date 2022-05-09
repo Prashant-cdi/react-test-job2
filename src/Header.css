@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0px 20px;
+}
+
+.firstDiv {
+    display: flex;
+    align-items: center;
+    width:25%;
+  
+}
+.middleDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.lastDiv {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: right;
+}
+
+.MenuItem {
+    width: 6rem;
+    text-align: center;
+}
+
+.icons {
+    width: 3rem;
+    text-align: right;
+}
+
+.image {
+    width: 15px;
+    background-color: lightgrey;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.name {
+    padding: 3px 5px 8px 0px;
+}
