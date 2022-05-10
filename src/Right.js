@@ -1,5 +1,5 @@
 export function Right() {
     return(
-        <h1>something</h1>
+        <div className="somewidth"></div>
     )
 }
