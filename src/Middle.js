@@ -131,8 +131,6 @@ export function Middle() {
             document.getElementById("rightarrow").style.display = "block";
         }
 
-        //here five is written because we are displaying 5 elements
-        
         if(i===images.length-5){
             console.log("hiding right arrow")
             document.getElementById("rightarrow").style.display = "none";
