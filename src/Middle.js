@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 // import ReactDOM from "react-dom/";
 import { CreateRoom } from "./CreateRoom"
@@ -118,30 +118,36 @@ export function Middle() {
 
     const App = () => {
        
+       
         var [counter, setCounter] = useState(0);
-        var i=counter;
-
-        if(i>=1){
-
-            console.log("left arrow is displayed")
-            document.getElementById("leftarrow").style.display = "block";
-        }
         
-        if(i===1){
-            document.getElementById("rightarrow").style.display = "block";
-        }
+        var i = counter
+        useEffect(()=>{
 
-        if(i===images.length-5){
-            console.log("hiding right arrow")
-            document.getElementById("rightarrow").style.display = "none";
-        }   
-
-        if(counter==0) {
-            if(document.getElementById("leftarrow") ){
-                document.getElementById("leftarrow").style.display = "none"
+            if(counter>=1){
+    
+                console.log("left arrow is displayed")
+                document.getElementById("leftarrow").style.display = "block";
             }
-        }
-      
+            
+            if(counter===1){
+                document.getElementById("rightarrow").style.display = "block";
+            }
+    
+            if(counter===images.length-5){
+                console.log("hiding right arrow")
+                document.getElementById("rightarrow").style.display = "none";
+            }   
+    
+            if(counter==0) {
+                if(document.getElementById("leftarrow") ){
+                    document.getElementById("leftarrow").style.display = "none"
+                }
+            }
+          
+
+        })
+        
        
         return (
        <>
